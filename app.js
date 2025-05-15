@@ -101,9 +101,15 @@ app.post('/editFilm', async function (req, res) { //this one just takes them to 
 })
 
 app.post('/updateFilm', async function (req, res) { //this one updates the record after they save changes on the form
+    let filmExistCheck = await movieDB.checkFilmIDExists(req.body.img.trim())
+    let imgPath = ""
+    if(filmExistCheck){
+        let film = await movieDB.getExactFilm(req.body.img.trim())
+        imgPath = film.img
+    }
     let filmObject = {
         title: req.body.title,
-        img: req.body.img,
+        img: imgPath,
         rating: req.body.rating,
         director: req.body.director,
         description: req.body.description,
@@ -142,9 +148,15 @@ app.get('/createFilm', async function (req, res) {
 })
 
 app.post('/createFilmRecord', async function (req, res) { 
+    let filmExistCheck = await movieDB.checkFilmIDExists(req.body.img.trim())
+    let imgPath = ""
+    if(filmExistCheck){
+        let film = await movieDB.getExactFilm(req.body.img.trim())
+        imgPath = film.img
+    }
     let filmObject = {
         title: req.body.title,
-        img: req.body.img,
+        img: imgPath,
         rating: req.body.rating,
         director: req.body.director,
         description: req.body.description,
