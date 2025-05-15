@@ -1,0 +1,22 @@
+<div class="film">
+    <img class="filmImg" src="{{img}}" alt="{{title}} Poster" onerror="this.onerror=null; this.src='/images/default.jpg';">
+    <div class="filmInfo">
+        <h3>{{title}}</h3>
+        <div class="ratingAndRuntime">
+            <div class="rating-circle rating-{{rating}}">{{rating}}</div>
+            <div class="runtime">{{runtime}} Minutes</div>
+        </div>
+        <div class="description">
+            <p>{{description}}</p>
+        </div>
+        <form action="/editFilm" method="post">
+            <input type="text" class="id" name="id" value="{{rowid}}">
+            <button id='editButton' type="submit" class="button">Edit</button>
+        </form>
+    </div>
+</div>
+<hr>
+<div class="moreDetailsandDates">
+    <h5>Director: <h6>{{director}}</h6></h5>
+    <h5>Actors: <h6>{{actors}}</h6></h5>
+</div>

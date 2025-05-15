@@ -1,0 +1,11 @@
+<section class="searchResults">
+  <div class="container">
+    <h2>Search Returned For Search Term "{{searchTerm}}" In {{category}}</h2>
+    <h1>{{errorMessage}}</h1>
+    <div class="movie-list">
+      {{#each films}}
+      {{> _filmCard}}
+      {{/each}}
+    </div>
+  </div>
+</section>

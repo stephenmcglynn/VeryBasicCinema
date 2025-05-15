@@ -1,0 +1,19 @@
+<div class="film">
+    <img class="filmImg" src="{{img}}" alt="{{title}} Poster"
+        onerror="this.onerror=null; this.src='/images/default.jpg';">
+    <div class="filmInfo">
+        <h3>{{title}}</h3>
+        <div class="ratingAndRuntime">
+        </div>
+        <div class="description">
+            <p>{{description}}</p>
+        </div>
+        <div id="buttons">
+            <form action="/addMovieDBFilm" method="post">
+                <input type="text" class="id" name="id" value="{{id}}">
+                <button type="submit" class="button">Add To DB</button>
+            </form>
+
+        </div>
+    </div>
+</div>

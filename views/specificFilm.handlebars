@@ -1,0 +1,6 @@
+<div id="filmsMain">
+    <h1>{{film.0.title}}</h1>
+    {{#with film.[0]}} 
+        {{> _filmDetails}}
+    {{/with}}
+</div>

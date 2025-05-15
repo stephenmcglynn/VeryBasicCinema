@@ -1,0 +1,60 @@
+<!-- rowid  -->
+<label for="id">ID:</label>
+<input type="text" id="id" name="id" value="{{rowid}}" readonly>
+<!-- added readonly because i dont want them to change the id -->
+<br>
+
+<!-- Title  -->
+<label for="title">Film Title:</label>
+<input type="text" id="title" name="title" value="{{title}}" required>
+<br>
+
+<!-- Image -->
+<label for="img">Image Path:</label>
+<input type="text" id="img" name="img" value="{{img}}">
+<br>
+
+<!-- Rating -->
+<label for="rating">Rating:</label>
+<input type="text" id="rating" name="rating" value="{{rating}}" required>
+<br>
+
+<!-- Director -->
+<label for="director">Director:</label>
+<input type="text" id="director" name="director" value="{{director}}" required>
+<br>
+
+<!-- Description -->
+<label for="description">Description:</label>
+<textarea id="description" name="description">{{description}}</textarea>
+<br>
+
+<!-- Tagline -->
+<label for="tagline">Tagline:</label>
+<input type="text" id="tagline" name="tagline" value="{{tagline}}" required>
+<br>
+
+<!-- Actors -->
+<label for="actors">Actors:</label>
+<input type="text" id="actors" name="actors" value="{{actors}}" required>
+<br>
+
+<!-- Genre -->
+<label for="genre">Genre:</label>
+<input type="text" id="genre" name="genre" value="{{genre}}" required>
+<br>
+
+<!-- Runtime -->
+<label for="runtime">Runtime (minutes):</label>
+<input type="text" id="runtime" name="runtime" pattern="^\d{3}$" title="Runtime must be 3 digits" required
+    value="{{runtime}}">
+<br>
+
+<!-- Year -->
+<label for="year">Year:</label>
+<input type="text" id="year" name="year" pattern="^\d{4}$" title="Year must be 4 digits" required value="{{year}}">
+<br>
+
+<!-- Submit Button -->
+<button type="submit">Save Changes</button>
+</form>

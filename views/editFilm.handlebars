@@ -1,0 +1,5 @@
+<h1>Edit Film</h1>
+<form id='editForm' class="editCreateForm" action="/updateFilm" method="POST">
+    {{#with film.[0]}}
+    {{> _editAndCreateForm}}
+    {{/with}}

@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <div id='navContainer' class="container">
+    <a href="/" class="logo">MadraMór</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/films">Films</a></li>
+      <li><a href="/movieDB">TMDB API</a></li>
+      <li><a href="/resetDatabase" class="btn-danger ms-2"
+   onclick="return confirm('Are you sure you want to reset the database? This will erase all changes!');">
+   RESET TO DEFAULT
+</a></li>
+      <form action="/search" method="post">
+        <div id="searchForm">
+          <input type="text" id="searchTerm" name="searchTerm" required="required">
+          <div id="selectAndSearch">
+            <select name="categories" id="categories">
+              <option value="title">Title</option>
+              <option value="genre">Genre</option>
+              <option value="year">Year</option>
+            </select>
+            <input type="submit" id="searchButton" value="Search">
+          </div>
+        </div>
+      </form>
+
+    </ul>
+  </div>
+</nav>

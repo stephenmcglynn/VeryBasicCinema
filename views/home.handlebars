@@ -1,0 +1,21 @@
+{{> _banner}}
+<section class="nowShowing">
+  <div class="container">
+    <h2>Now Showing</h2>
+    <div class="movie-list">
+      {{#each films}}
+      {{> _filmCard}}
+      {{/each}}
+    </div>
+  </div>
+</section>
+{{!-- <section class="upcoming">
+  <div class="container">
+    <h2>Upcoming</h2>
+    <div class="movie-list">
+      {{#each upcomingFilms}}
+      {{> _filmCard}}
+      {{/each}}
+    </div>
+  </div>
+</section> --}}

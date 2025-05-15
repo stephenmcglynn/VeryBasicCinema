@@ -1,0 +1,10 @@
+<div class="filmCard">
+  <img src="{{img}}" alt="{{title}} poster" onerror="this.onerror=null; this.src='/images/default.jpg';">
+  <h3>{{title}}</h3>
+  <p>{{tagline}}</p>
+  <form action="/specificFilm" method="post">
+    <input type="text" class="id" name="id" value="{{rowid}}">
+    <button type="submit" class="button">Details</button>
+  </form>
+
+</div>

@@ -1,0 +1,28 @@
+<div class="film">
+    <img class="filmImg" src="{{img}}" alt="{{title}} Poster"
+        onerror="this.onerror=null; this.src='/images/default.jpg';">
+    <div class="filmInfo">
+        <h3>{{title}}</h3>
+        <div class="ratingAndRuntime">
+            <div class="rating-circle rating-{{rating}}">{{rating}}</div>
+            <div class="runtime">{{runtime}} Minutes</div>
+        </div>
+        <div class="description">
+            <p>{{description}}</p>
+        </div>
+        <div id="buttons">
+            <form action="/specificFilm" method="post">
+                <input type="text" class="id" name="id" value="{{rowid}}">
+                <button type="submit" class="button">Details</button>
+            </form>
+            <form action="/editFilm" method="post">
+                <input type="text" class="id" name="id" value="{{rowid}}">
+                <button id='editButton' type="submit" class="button">Edit</button>
+            </form>
+            <form action="/deleteFilm" method="post">
+                <input type="text" class="id" name="id" value="{{rowid}}">
+                <button id='deleteButton' type="submit" class="button">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>

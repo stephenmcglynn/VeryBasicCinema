@@ -1,0 +1,26 @@
+<div class="search-container">
+    <div class="extraPage">
+        <h5>This is the page where we use extra npm modules, this one allows you to search movies from <a
+                href="https://www.themoviedb.org/">The Movie Database</a> Website<br>
+            using the node module moviedb-promise and add the ones you find to the database if you want<br>
+            (Note that TMDB does not provide age ratings, directors, or actors, movies added this way need to be edited manually if you want to include those)
+        </h5>
+        <form action="/movieDB" method="POST">
+            <input type="text" class="search-bar" name="search" id="search"
+                placeholder="Search for a movie using the title">
+            <button type='submit' class="search-button">Search</button>
+        </form>
+    </div>
+    {{!-- <div class="extraPage">
+        <h5>This one just checks if the date you entered is valid, e.g. 29th of february will only be valid on a leap
+            year<br>
+            using the node module date-fns
+        </h5>
+        <form action="/checkDate" method="POST">
+            <input type="text" class="search-bar" name="date" id="date"
+                placeholder="enter any dat in this format (dd-mm-yyyy) and see if its valid">
+            <button type='submit' class="search-button">check</button>
+        </form>
+        <h2>{{validity}}</h2>
+    </div> --}}
+</div>
