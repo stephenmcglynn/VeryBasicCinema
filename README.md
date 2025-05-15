@@ -12,7 +12,7 @@ A full-stack cinema web app built with **Node.js**, **Express**, **Handlebars**,
 🔗 [View the live site on Render](https://stephensverybasiccinema.onrender.com)
 
 > ⚠️ Note: I am hosting the web app on the free tier of render so it may take a minute or two to load.
-> ⚠️ Note: As its a demo you can mess about and add, delete, edit whatever you want, just press RESET TO DEFAULT to put it back to its original state
+As its a demo you can mess about and add, delete, edit whatever you want, just press RESET TO DEFAULT to put it back to its original state
 
 ---
 
